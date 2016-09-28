@@ -1,0 +1,19 @@
+@mixin displayFlex(){
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexBasis($basis){
+  -webkit-flex-basis: $basis;
+  flex-basis:$basis;
+}
+@mixin boxFlex($val){
+  -webkit-box-flex: $val;
+  -moz-box-flex: $val;
+}
+@mixin contentAlign($val){
+  -webkit-justify-content: $val;
+  -webkit-align-items:$val ;
+  justify-content: $val;
+  align-items:$val ;
+}

@@ -1,0 +1,174 @@
+/*不要在CSS里改样式,请到SCSS里改样式*/
+@import "main";
+body{
+  background: #f4f4f4;
+}
+::-webkit-input-placeholder {
+  color: #666;
+  font-size: 90%;
+}
+.index-header{
+  background:rgba(192,61,216,0.2);
+  position:fixed;top:0;left:0;right:0;
+  z-index:999;
+  height:32px;
+  padding:6px 10px;
+  line-height: 32px;
+  color:#fff;
+  font-size: 15px;
+  .local-pos{
+    float:left;
+    overflow: hidden;
+    i{
+      display: block;
+      float: left;
+      width:19px;height:19px;margin: 6px 6px 0 0;
+      background:url(/assets/images/icon/icon_address_white.png) no-repeat;
+      background-size: 19px;
+    }
+    span{
+      max-width: 50px;
+    }
+  }
+  .index-search{
+    position:absolute;
+    left:80px;right:50px;top:5px;
+    input{
+      height:30px;line-height: 30px;
+      background: rgba(255,255,255,.7) url(/assets/images/icon/icon_search_grey.png) no-repeat 10px 6px;
+      background-size: 18px;
+      padding-left:30px;
+      border:none;
+      width:100%;
+      border-radius: 15px;
+    }
+  }
+  .message{
+    background:url(/assets/images/icon/icon_msg_white.png) no-repeat;
+    background-size: 22px;
+    width:24px;height:20px;
+    float: right;
+    margin-top:5px;
+    position:relative;
+    i{
+      background: $colorPurple;
+      width:16px;height:16px;
+      position:absolute;
+      top:-4px;right:-4px;
+      overflow: hidden;
+      display: block;line-height: 16px;text-align: center;
+      border-radius: 8px;font-size: 10px;
+      font-style:normal;
+    }
+  }
+}
+
+.index-banner{
+  width:100%;
+  img{
+    width:100%;display: block;
+  }
+}
+.index-classify{
+  background: #fff;padding:10px 0;
+  ul{
+    overflow:hidden;
+    li{
+      float:left;width: 20%;text-align: center;margin:2px auto;
+      img{
+        display: block;width:30px;margin:5px auto;
+      }
+      span{
+        font-size: 13px;color:#666;
+      }
+    }
+  }
+}
+.layout{
+  .title{
+    text-align: center;
+    img{
+      display: block;width:52%;margin:auto;
+    }
+  }
+}
+.limit-rush-con{
+  ul{
+    overflow:hidden;
+  }
+  li{
+    float:left;
+    width:calc(33.33% - 22px);
+    font-size:14px;
+    margin:0 1px;
+    padding:10px;
+    background: #fff;
+    img{
+      width:100%;
+      display: block;
+    }
+    .name{
+      word-wrap: break-word;
+    }
+    .price{
+      overflow: hidden;
+      line-height: 22px;
+      span{
+        display:block;
+        float:left;
+        color:#e60012;
+      }
+      span.old{
+        font-size: 12px;float: right;color:#999;text-decoration:line-through;
+      }
+    }
+  }
+}
+.act-block{
+  ul{
+    overflow:hidden;
+    margin:0 -2px;
+    li{
+      margin:1px;float:left;width:calc(25% - 2px);
+      img{
+        width:100%;display: block;
+      }
+    }
+  }
+}
+.adv{
+  margin:5px auto;
+  img{
+    width:100%;
+  }
+}
+
+.gui-life-con{
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  .glc-left{
+    -webkit-box-flex:1.0;
+    margin-right:1px;
+    -webkit-flex-basis: 38%;
+  }
+  .glc-right{
+    -webkit-box-flex:2.0;
+    -webkit-flex-basis: 61.87%;
+    .glc-bottom{
+      margin-top:1px;
+      display: -webkit-flex;
+      div{
+        -webkit-box-flex: 1.0;
+        -webkit-flex-basis: 50%;
+      }
+      div+div{
+        margin-left:1px;
+      }
+    }
+  }
+  img{
+    width:100%;
+    display: block;
+  }
+}
